@@ -23,19 +23,7 @@
     cursor: pointer; /* Changes the cursor to a pointer when hovering over the options */
   }
   
-  .apply-now-button {
-    width: 145px;
-    height: 33px;
-    background-color: #40667D;
-    border-radius: 10px;
-    border: none; /* Removes the default border */
-    color: white; /* Sets the text color to white */
-    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
-  }
-  
-  .apply-now-button:hover {
-    background-color: #305060; /* Changes the background color when hovering over the button */
-  }
+
   
   
   @media (max-width: 768px) {
@@ -99,41 +87,69 @@
     height: auto;
     margin-bottom: 20px;
   }
+
+  #p1{
+    margin-top: 15%;
+  }
+
   
-  .buttons {
-    margin: auto;
-    display: flex;
-    width: 170.13px;
-    height: 67.33px;
-    align-items: center;
-    justify-content: center;
-    padding: 24px 61px;
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid;
-    border-color: var(--text-color-dark);
+
+  
+  .join-button {
+    display: inline-block;
+    
+    text-decoration: none;
+    width: auto; /* Adjust as necessary */
+    height: auto; /* Adjust as necessary */
+    padding: 24px 61px; /* Adjust as necessary */
+    border-radius: 20px; /* Adjust as necessary */
+    background-color: #40667D; /* Adjust as necessary */
+    color: var(--text-color-dark); /* Adjust as necessary */
+    border: none; /* Remove default button border */
+    font-size: 24px; /* Adjust as necessary to match your typography settings */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s; /* Add transition for click animation */
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
   }
   
-  .buttons .button {
-    position: relative;
-    width: fit-content;
-    margin-top: -6px;
-    margin-bottom: -3.67px;
-    margin-left: -31px;
-    margin-right: -30.87px;
-    color: var(--text-color-dark);
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    all: unset;
-    box-sizing: border-box;
-  }
-  
-  
-  .buttons:active{
+  .join-button:active {
     transform: scale(0.95); /* Add scale transformation for click animation */
   }
+
+  .photo-container {
+    position:relative;
+    width: 60%;
+    margin-left: 10%;
+    margin-right: auto;
+  }
+  
+  .photo-container img {
+    width: 100%;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+  }
+
+  .arrow:active {
+    transform: translateY(-50%) scale(0.95); /* Add scale transformation for click animation */
+  }
+  
+  .left-arrow {
+    left: -50px;
+  }
+  
+  .right-arrow {
+    right: -50px;
+  }
+
   
   
   @media(max-width:768px) {
@@ -244,4 +260,43 @@
     .body-text{
       font-size: 18px;
     }
+  }
+
+  .top-gap{
+    margin-top: 5%;
+  }
+
+  .big_gap{
+    margin-top: 15%;
+  }
+
+  .FBcontainer{
+    display: flex;
+  }
+
+  .FBI1{
+    width: 50%;
+  }
+
+  .FBbutton{
+    display: inline-block;
+    align-content: center;
+    text-decoration: none;
+    width: auto; /* Adjust as necessary */
+    height: 50px; /* Adjust as necessary */
+    padding: 24px 61px; /* Adjust as necessary */
+    border-radius: 20px; /* Adjust as necessary */
+    background-color: #40667D; /* Adjust as necessary */
+    color: var(--text-color-dark); /* Adjust as necessary */
+    border: none; /* Remove default button border */
+    font-size: 24px; /* Adjust as necessary to match your typography settings */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: transform 0.3s; /* Add transition for click animation */
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .FBbutton:active {
+    transform: scale(0.95); /* Add scale transformation for click animation */
   }
