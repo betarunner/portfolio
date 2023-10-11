@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --background-color-dark: #222227;
+    --background-color-light: #F2EFE9;
+    --text-color-dark: #F2EFE9; /* Adjust as necessary */
+    --text-color-light: #222227; /* Adjust as necessary */
+  }
+  
+  body {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body .themetoggle-block {
+    background-color: var(--background-color-dark);
+    /* color: inherit; */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark .themetoggle-block {
+    background-color: var(--background-color-light);
+    /* color: inherit; */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark .nav-desktop .body-text, body.dark .nav-mobile .body-text {
+    color: var(--text-color-light);
+  }
+  /* body .nav-desktop a.body-text, body .nav-mobile a.body-text {
+    color: var(--text-color-dark);
+  }
+  
+  body.dark .nav-desktop a.body-text, body.dark .nav-mobile a.body-text {
+    color: var(--text-color-light);
+  } */
+  
+  
+  .headline-1 {
+    font-family: 'Franuces', serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 56px;
+  }
+  
+  .headline-2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400; /* Regular */
+    font-size: 40px;
+  }
+  
+  .subheadline-1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600; /* SemiBold */
+    font-size: 32px;
+  }
+  
+  .subheadline-2 {
+    font-family: 'Fraunces', serif; /* Assuming Franuces was a typo */
+    font-weight: 400; /* Regular */
+    font-size: 24px;
+  }
+  
+  .body-text {
+    font-family: 'Syne', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 24px;
+  }
+  
+  .caption-text {
+    font-family: 'Syne', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 16px;
+  }
